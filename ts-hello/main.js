@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//import { Point } from "./Point";
+var like_component_1 = require("./like.component");
+// let point = new Point(2, 3);
+// point.x = 10;
+// let ui = point.x;
+// point.draw();
+var component = new like_component_1.LikeComponent(10, true);
+component.onCLick();
+console.log('LikeCount:' + component.likesCount + " IsSelected:" + component.isSelected);
+console.log("LikeCount:" + component.likesCount + ",IsSelected:" + component.isSelected);
