@@ -1,3 +1,4 @@
+import { TitleCasePipe } from './titlecase.pipe';
 import { SummaryPipe } from './summary.pipe';
 import { CoursesService } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,6 +17,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { PipesUsageComponent } from './components/pipes-usage/pipes-usage.component';
 import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.component';
 import { Assignment2Component } from './components/assignment2/assignment2.component';
+import { Assignment3Component } from './components/assignment3/assignment3.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { Assignment2Component } from './components/assignment2/assignment2.compo
     PipesUsageComponent,
     PipesCustomComponent,
     SummaryPipe,
-    Assignment2Component
+    Assignment2Component,
+    Assignment3Component,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
