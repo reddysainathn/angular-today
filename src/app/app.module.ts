@@ -18,6 +18,7 @@ import { PipesUsageComponent } from './components/pipes-usage/pipes-usage.compon
 import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.component';
 import { Assignment2Component } from './components/assignment2/assignment2.component';
 import { Assignment3Component } from './components/assignment3/assignment3.component';
+import { FavouriteComponent } from './components/favourite/favourite.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { Assignment3Component } from './components/assignment3/assignment3.compo
     SummaryPipe,
     Assignment2Component,
     Assignment3Component,
-    TitleCasePipe
+    TitleCasePipe,
+    FavouriteComponent
   ],
   imports: [
     BrowserModule,
