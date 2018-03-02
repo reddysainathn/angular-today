@@ -9,8 +9,7 @@ export class CourseeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    
+  ngOnInit() {  
   }
 
 }

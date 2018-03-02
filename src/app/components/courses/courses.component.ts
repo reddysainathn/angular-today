@@ -1,5 +1,5 @@
-import { CoursesService } from './courses.service';
 import { Component } from "@angular/core";
+import { CoursesService } from "../../services/courses/courses.service";
 @Component({
     selector: 'courses',
     template: `<h2>{{ courseName}}</h2>

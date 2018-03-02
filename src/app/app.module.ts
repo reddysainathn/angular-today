@@ -1,24 +1,24 @@
-import { TitleCasePipe } from './titlecase.pipe';
-import { SummaryPipe } from './summary.pipe';
-import { CoursesService } from './courses.service';
+import { TitleCasePipe } from './pipes/titlecase.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { CourseComponent } from './courses.component';
-import { CourseeComponent } from './coursee/coursee.component';
-import { AuthorComponent } from './author/author.component';
-import { AuthorService } from './author.service';
+import { CourseComponent } from './components/courses/courses.component';
+import { CourseeComponent } from './components/coursee/coursee.component';
+import { AuthorComponent } from './components/author/author.component';
+import { AuthorService } from './services/author/author.service';
 import { DataDisplayComponent } from './components/data-display/data-display.component';
-import { DataDisplayService } from './data-display.service';
+import { DataDisplayService } from './services/data-display/data-display.service';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { PipesUsageComponent } from './components/pipes-usage/pipes-usage.component';
 import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.component';
 import { Assignment2Component } from './components/assignment2/assignment2.component';
 import { Assignment3Component } from './components/assignment3/assignment3.component';
 import { FavouriteComponent } from './components/favourite/favourite.component';
+import { CoursesService } from './services/courses/courses.service';
 
 
 @NgModule({
