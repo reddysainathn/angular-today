@@ -1,0 +1,5 @@
+<p>
+  THis is two-way-binding Example!
+</p>
+<!-- <input [value]="email" (keyup.enter)="  email= $event.target.value;onKeyUp()"> -->
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()">

@@ -1,5 +1,7 @@
+import { SummaryPipe } from './summary.pipe';
 import { CoursesService } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
@@ -8,6 +10,11 @@ import { CourseComponent } from './courses.component';
 import { CourseeComponent } from './coursee/coursee.component';
 import { AuthorComponent } from './author/author.component';
 import { AuthorService } from './author.service';
+import { DataDisplayComponent } from './components/data-display/data-display.component';
+import { DataDisplayService } from './data-display.service';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { PipesUsageComponent } from './components/pipes-usage/pipes-usage.component';
+import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.component';
 
 
 @NgModule({
@@ -15,15 +22,22 @@ import { AuthorService } from './author.service';
     AppComponent,
     CourseComponent,
     CourseeComponent,
-    AuthorComponent
+    AuthorComponent,
+    DataDisplayComponent,
+    TwoWayBindingComponent,
+    PipesUsageComponent,
+    PipesCustomComponent,
+    SummaryPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   // Singleton Pattern DI register
   providers: [
     CoursesService,
-    AuthorService
+    AuthorService,
+    DataDisplayService
   ],
   bootstrap: [AppComponent]
 })

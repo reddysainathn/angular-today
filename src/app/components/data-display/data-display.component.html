@@ -1,0 +1,34 @@
+<!-- Property Binding -->
+<h4>{{title }}</h4>
+<img src="{{imageURL}}" />
+<!-- Interpolation will be transferred with Property Binding as below-->
+<!-- Use String Interpolation for text,h1,div,parargaph -->
+<!-- Property Binding is Clean and short, It works in only one way! -->
+<img [src]="imageURL" />
+
+<!-- Attribute Binding -->
+<table>
+  <tr>
+    <td [attr.colspan]="colSpan">
+
+    </td>
+  </tr>
+</table>
+
+<!-- Adding Bootstrap and Event Binding-->
+<div (click)="onDivClick()">
+  <button class="btn btn-primary" (click)="getActive($event)">Bootstrap Button</button>
+</div>
+
+<!-- Class Binding -->
+
+<button class="btn btn-primary" [class.active]="isActive">Class Binding</button>
+<!-- Style Binding -->
+<button class="btn btn-primary" [style.backgroundColor]="isActive ? 'Green':'Black' ">Style Binding</button>
+<!-- EVen Filtering -->
+<!-- <input type="text" (keyup)="onKeyUp($event)"> -->
+<div>
+  <input #email (keyup.enter)="onKeyUp(email.value)">
+</div>
+
+<!-- Two-way Binding -->
