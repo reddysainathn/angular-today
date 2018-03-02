@@ -15,6 +15,7 @@ import { DataDisplayService } from './data-display.service';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { PipesUsageComponent } from './components/pipes-usage/pipes-usage.component';
 import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.component';
+import { Assignment2Component } from './components/assignment2/assignment2.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PipesCustomComponent } from './components/pipes-custom/pipes-custom.com
     TwoWayBindingComponent,
     PipesUsageComponent,
     PipesCustomComponent,
-    SummaryPipe
+    SummaryPipe,
+    Assignment2Component
   ],
   imports: [
     BrowserModule,
