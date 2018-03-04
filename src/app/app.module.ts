@@ -19,6 +19,7 @@ import { Assignment2Component } from './components/assignment2/assignment2.compo
 import { Assignment3Component } from './components/assignment3/assignment3.component';
 import { FavouriteComponent } from './components/favourite/favourite.component';
 import { CoursesService } from './services/courses/courses.service';
+import { PanelComponent } from './components/panel/panel.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CoursesService } from './services/courses/courses.service';
     Assignment2Component,
     Assignment3Component,
     TitleCasePipe,
-    FavouriteComponent
+    FavouriteComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
