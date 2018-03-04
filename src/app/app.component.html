@@ -16,10 +16,12 @@
     </div>
 </bootstrap-panel> -->
 
-<bootstrap-panel>
+<!-- <bootstrap-panel>
         <ng-container class="heading">Heading</ng-container>
         <ng-container class="body">
             <h1>Body</h1>
             <p>Some Content.</p>
         </ng-container>
-    </bootstrap-panel>
+    </bootstrap-panel> -->
+
+<twitter-like [likeCount]="tweet.likeCount" [isActive]="tweet.isLiked"></twitter-like>
